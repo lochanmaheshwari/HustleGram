@@ -607,18 +607,21 @@ span {
     margin-bottom: 25px;
 }
 
-
+/* ------- about css -------- */
 /* ------- about css -------- */
 
 .about-area {
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-image {
     display: inline-block;
     position: relative;
     text-align: center;
-    margin-left: 50px;
+    margin-bottom: 50px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -629,14 +632,6 @@ span {
     height: 394px;
     background-color: #0898e7;
     border-radius: 50%;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px),
-(max-width: 767px) {
-    .about-image .about-shape {
-        width: 380px;
-        height: 380px;
-    }
 }
 
 .about-image .about-shape::before {
@@ -661,11 +656,9 @@ span {
     transform: rotate(-25deg) translateY(-15%);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px),
-(max-width: 767px) {
-    .about-image .app {
-        max-width: 250px;
-    }
+.about-content {
+    text-align: center;
+    max-width: 500px;
 }
 
 .title {
@@ -679,6 +672,25 @@ span {
 
 .about-content .main-btn {
     margin-top: 40px;
+}
+
+/* Media Query for phones */
+@media only screen and (max-width: 767px) {
+    .about-image {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .about-image .about-shape {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-image .app {
+        max-width: 200px;
+        top: 80px;
+        left: 70px;
+    }
 }
 
 /* --------- Testimonial css ---------- */
