@@ -792,6 +792,45 @@ span {
     color: rgba(72, 124, 255, .5);
 }
 
+/* Existing CSS */
+.testimonial-section {
+    padding: 100px 0;
+    background-color: #a3bdff;
+}
+
+/* ... (other existing styles) ... */
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .testimonial-section {
+        padding: 60px 0;
+    }
+
+    .testimonial-section .tns-controls button svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .testimonial-section .single-testimonial {
+        padding: 30px;
+    }
+
+    .testimonial-section .single-testimonial::before {
+        top: -10px;
+        right: -10px;
+    }
+
+    .testimonial-section .single-testimonial::after {
+        top: -20px;
+        right: -20px;
+    }
+
+    .testimonial-section .single-testimonial .quote {
+        top: 30px;
+        right: 30px;
+        font-size: 60px;
+    }
+}
 /* ------ pricing css --------- */
 
 .single-pricing {
@@ -1095,4 +1134,82 @@ span {
 
 .footer-copyright .copyright .copyright-text .text a {
     color: #747e88;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* Add CSS rules for extra small devices here */
+    .header-hero-content .header-title {
+        font-size: 32px;
+    }
+    .header-image img {
+        max-width: 200px;
+    }
+    .feature-section .single-feature {
+        margin-bottom: 30px;
+    }
+    .about-image {
+        margin-left: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .about-image .about-shape {
+        width: 300px;
+        height: 300px;
+    }
+    .about-image .app {
+        max-width: 200px;
+        left: 65px;
+    }
+    .testimonial-section .single-testimonial {
+        padding: 30px;
+    }
+    .single-pricing {
+        margin-bottom: 30px;
+    }
+    .footer-link-wrapper {
+        width: 100%;
+    }
+    .footer-contact {
+        padding-top: 30px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    /* Add CSS rules for small devices here */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Add CSS rules for medium devices here */
+    .header-hero-content .header-title {
+        font-size: 36px;
+    }
+    .header-image img {
+        max-width: 300px;
+    }
+    .about-image .about-shape {
+        width: 350px;
+        height: 350px;
+    }
+    .about-image .app {
+        max-width: 250px;
+        left: 85px;
+    }
+    .testimonial-section .single-testimonial {
+        padding: 40px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Add CSS rules for large devices here */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* Add CSS rules for extra large devices here */
 }
